@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyen tap cau truc if else if</title>
+</head>
+<body>
+<script>
+    let input1 =prompt("Please input Username");
+    if (input1==="Admin"){
+        let input2 = prompt("Please input Password");
+        if (input2="TheMaster") {
+            alert("Welcome");
+        }
+            else if(input2=="") {
+            alert("Canceled");
+        }
+                else{
+                alert("Wrong Password");
+                }
+    }
+    else if(input1=="") {
+        alert("Canceled");
+    }
+        else {
+            alert("I dont know you");
+        }
+</script>
+</body>
+</html>
