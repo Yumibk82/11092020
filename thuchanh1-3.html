@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiem tra nam nhuan</title>
+</head>
+<body>
+<script>
+    let year =+prompt("Please input year");
+    let isLeapYear = false;
+    let div4 = year%4==0;
+    let div100 = year%100==0;
+    let div400 = year%400==0;
+
+        if (div4){
+            if(div100){
+                if(div400){
+                    isLeapYear = true;
+                }
+                else {
+                    isLeapYear = false;
+                }
+            }
+        }
+    if (isLeapYear){
+        alert(year + "is a leap year")
+    }
+    else {
+        alert(year + "is not a leap year")
+    }
+</script>
+</body>
+</html>
